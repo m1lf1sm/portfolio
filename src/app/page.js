@@ -215,12 +215,12 @@ export default function Home() {
               className="relative object-contain  z-4 right-[-40rem] top-[-20rem]"
             />
           </motion.div>
-        
+
       </div>
 
 
 
-
+ {/* {hello} */}
 
 
     </div>
