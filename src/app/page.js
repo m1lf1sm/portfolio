@@ -1,9 +1,10 @@
 "use client";
 import Image from "next/image";
 import { motion, scale } from "framer-motion";
-import { useRef, useEffect } from "react";
+import { useRef, useState } from "react";
 export default function Home() {
-
+        const [hovered1, setHovered1] = useState(false);
+        const [hovered2, setHovered2] = useState(false);
   return (
 
   <div className="bg-[url('/backgroun.jpg')] bg-cover bg-center bg-repeat ">
@@ -153,23 +154,33 @@ export default function Home() {
           </motion.div>
           <div className="relative flex justify-center w-full max-w-2xl py-50 scale-200">
 
-            <motion.div className="relative flex align-left px-10">
-            <Image
-            src = "/mywork/illustration button 1.png"
-            alt ="illustrations"
-            width={600}
-            height={400}
-            className="relative object-contain w-full"
-            />
+            <motion.div className="relative flex  px-10" 
+                    onMouseEnter={() => setHovered1(true)}
+                    onMouseLeave={() => setHovered1(false)}>
+              <Image
+                src = {hovered1
+                    ? "/mywork/illustration button 2.png" // shown on hover
+                    : "/mywork/illustration button 1.png" // default image
+                  }
+              alt ="illustrations"
+              width={600}
+              height={400}
+              className="relative object-contain "
+              />
               
             </motion.div>
-            <motion.div className="relative flex align-right px-10">
+            <motion.div className="relative flex px-10" 
+                    onMouseEnter={() => setHovered2(true)}
+                    onMouseLeave={() => setHovered2(false)}>
             <Image
-            src = "/mywork/graphic design button 1.png"
+            src = {hovered2
+                    ? "/mywork/graphic design button 2.png" // shown on hover
+                    : "/mywork/graphic design button 1.png" // default image
+                  }
             alt ="illustrations"
             width={600}
             height={400}
-            className="relative object-contain w-full"
+            className="relative object-contain "
             />
               
             </motion.div>
@@ -215,6 +226,26 @@ export default function Home() {
               className="relative object-contain  z-4 right-[-40rem] top-[-20rem]"
             />
           </motion.div>
+
+        <motion.div className=" flex justify-right align-right items-start  scale-150 ">
+            <Image
+              src="/contact/text 1.png"
+              alt="About Image"
+              width={500}
+              height={700}
+              className="relative object-contain  z-4 right-[-30rem] top-[-22rem]"
+            />
+          </motion.div>
+        <motion.div className=" flex justify-right align-right items-start  scale-150 ">
+            <Image
+              src="/contact/text 2.png"
+              alt="About Image"
+              width={500}
+              height={700}
+              className="relative object-contain  w-full max-w-xs z-4 right-[-40rem] top-[-20rem]"
+            />
+          </motion.div>
+
 
       </div>
 
