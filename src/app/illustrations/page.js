@@ -1,4 +1,5 @@
 "use client";
+import {motion} from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -19,8 +20,8 @@ export default function IllustrationsPage() {
     return (
         <div className="bg-[url('/backgroun.jpg')] bg-cover bg-center min-h-screen">
             <header className="relative w-full z-40">
-                <Link href="/#work" passHref legacyBehavior>
-                    <a className="absolute top-4 left-4 sm:top-6 sm:right-6 md:top-8 md:right-8 cursor-pointer">
+                <Link href="/#work" >
+                    <motion.div  className="absolute top-4 left-4 sm:top-6 sm:right-6 md:top-8 md:right-8 cursor-pointer">
                         <Image
                         
                             src="/illustration/back 1.png" // CHANGE THIS TO YOUR ACTUAL IMAGE PATH
@@ -28,9 +29,9 @@ export default function IllustrationsPage() {
                             width={150} // Base size
                             height={150}
                             // Responsive sizing classes
-                            className="w-20 h-auto sm:w-24 md:w-32 lg:w-36 transition-transform duration-200 hover:rotate-[-15deg] transition:duration-[0] transition:linear "
+                            className="w-20 h-auto sm:w-24 md:w-32 lg:w-36 transition-transform duration-0 hover:rotate-[-15deg] transition:duration-[0] transition:linear "
                         />
-                    </a>
+                    </motion.div>
                 </Link>
             </header>
             <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-15">

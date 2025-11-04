@@ -29,7 +29,7 @@ export default function IllustrationsPage() {
                             width={150} // Base size
                             height={150}
                             // Responsive sizing classes
-                            className="w-20 h-auto sm:w-24 md:w-32 lg:w-36 transition-transform duration-200 hover:rotate-[-15deg]"
+                            className="w-20 h-auto sm:w-24 md:w-32 lg:w-36 transition-transform duration-0 hover:rotate-[-15deg]"
                         />
                     </a>
                 </Link>
