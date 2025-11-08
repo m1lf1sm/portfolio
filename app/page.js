@@ -102,7 +102,7 @@ export default function Home() {
       </section>
 
       {/* WHO AM I SECTION */}
-      <section id="about" className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-30 flex flex-col lg:flex-row w-full items-start top-[15rem] sm:top-[8rem] lg:top-[11rem] scale-80">
+      <section id="about" className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-0 sm:py-10 lg:py-10 flex flex-col lg:flex-row w-full items-start md:top-[10rem] sm:top-[8rem] mt-[20rem]">
         {/* Left Stack */}
         <div className="flex-1 flex flex-col gap-4 sm:gap-6 lg:gap-8 z-10 max-w-5xl w-full">
           <Image
@@ -136,7 +136,7 @@ export default function Home() {
         </div>
 
         {/* Right Side */}
-        <div className="flex-1 flex justify-center items-start max-w-6xl scale-100 sm:scale-125 lg:scale-150 top-0 lg:top-[-10rem] mt-8 lg:mt-0">
+        <div className="flex-1 flex justify-center items-start max-w-6xl scale-100 sm:scale-125 lg:scale-150 top-0 lg:top-[-10rem] mt-8 lg:top-[10]">
           <Image
             src="/about/aboutimage.png"
             alt="About Image"
@@ -153,19 +153,19 @@ export default function Home() {
           alt="Image 5"
           width={600}
           height={400}
-          className="relative object-contain w-full top-[1rem] sm:top-[1.5rem] lg:top-[2rem]"
+          className="relative object-contain w-full top-[1rem] sm:top-[1.5rem] lg:top-[20rem]"
         />
       </div>
-
       {/* MY WORK SECTION */}
-      <section id="work" className="relative flex-column justify-center w-full max-w-2xl py-16 sm:py-24 lg:py-30 mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="work" className="relative flex-column justify-center w-full max-w-2xl py-16 sm:py-24 lg:py-30 mx-auto px-4 sm:px-6 lg:px-8 lg:py-[5rem] lg:top-[10rem]">
+
         <motion.div>
           <Image
             src="/mywork/what do i dopng.png"
             alt="what do i do?"
             width={600}
             height={400}
-            className="relative object-contain w-full scale-100 sm:scale-110 lg:scale-120"
+            className="relative object-contain w-full scale-100 sm:scale-110 lg:scale-120 top-10"
           />
         </motion.div>
         
@@ -211,7 +211,7 @@ export default function Home() {
       </section>
 
       {/* LET'S TALK SECTION */}
-      <section id="contact" className="relative flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 lg:scale-100 2xl:top-[-5rem] 2xl:scale-75">
+      <section id="contact" className="relative flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 lg:scale-90 2xl:top-[15rem] 2xl:scale-75 top-[40rem]">
         <div className="relative flex max-w-2xl w-full justify-center">
           <motion.div>
             <Image
@@ -224,7 +224,7 @@ export default function Home() {
           </motion.div>
         </div>
 
-        <div className="relative flex flex-col lg:flex-row w-full justify-center items-center mx-auto px-4 sm:px-8 lg:px-80 gap-8 lg:gap-0 scale-120">
+        <div className="relative flex flex-col lg:flex-row w-full justify-center items-center mx-auto px-4 sm:px-8 lg:px-80 gap-8 lg:gap-0 ">
           <motion.div className="relative flex w-full max-w-xs justify-center top-[2rem] sm:top-[3rem] lg:top-[0rem] left-[-10rem] 2xl:left-[-20rem] 2xl:scale-100 2xl:top-[5rem] scale-80">
             <Image
               src="/contact/phone 1.png"
@@ -280,3 +280,4 @@ export default function Home() {
     </div>
   );
 }
+
