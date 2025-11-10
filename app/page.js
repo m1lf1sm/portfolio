@@ -20,7 +20,7 @@ export default function Home() {
       {/* HOME SECTION */}
 
       
-      <section id="home" className="min-h-screen flex flex-col items-center justify-center relative  px-4 sm:px-6 lg:px-8 lg:py-8">
+      <section id="home" className="min-h-screen flex flex-col items-center justify-center relative  px-4 sm:px-6 lg:px-8 lg:py-8 lg:mt-[-6rem]">
         <motion.div className="relative flex w-full inset-0 max-w-3xl justify-center top-[3rem] sm:top-[4rem] lg:top-[5rem]">
           <Image
             src="/home/portfolio1.png"
@@ -72,7 +72,7 @@ export default function Home() {
             onClick={()=>scrollToSection("work")}
             whileHover={{ rotate: 15 }}
             transition={{ duration: 0, type: "tween", ease: "linear" }}
-            className="absolute right-[-8rem] sm:right-[-12rem] lg:right-[-20rem] top-1/2 sm:top-12/20 -translate-y-1/2 z-10 w-32 sm:w-40 lg:w-52 rotate-[-15deg]"
+            className="absolute right-[-8rem] sm:right-[-12rem] lg:right-[-20rem] mt-1/2 sm:top-12/20 -translate-y-1/2 z-10 w-32 sm:w-40 lg:w-52 rotate-[-15deg]"
           >
             <Image
               src="/home/my work 1.png"
@@ -102,7 +102,7 @@ export default function Home() {
       </section>
 
       {/* WHO AM I SECTION */}
-      <section id="about" className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-30 sm:py-10 lg:py-10 flex flex-col lg:flex-row w-full items-start md:top-[10rem] sm:top-[8rem] lg:mt-[10rem] scale-80">
+      <section id="about" className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-30 sm:py-10 lg:py-10 flex flex-col lg:flex-row w-full items-start md:top-[10rem] sm:top-[8rem] lg:mt-[-15rem] scale-80">
         {/* Left Stack */}
         <div className="flex-1 flex flex-col gap-4 sm:gap-6 lg:gap-8 z-10 max-w-5xl w-full lg:mt-[10rem]">
           <Image
@@ -157,7 +157,7 @@ export default function Home() {
         />
       </div>
       {/* MY WORK SECTION */}
-      <section id="work" className="relative flex-column justify-center w-full max-w-2xl py-16 sm:py-24 lg:py-30 mx-auto px-4 sm:px-6 lg:px-8 lg:py-[5rem] lg:mt-[10rem]">
+      <section id="work" className="relative flex-column justify-center w-full max-w-2xl py-16 sm:py-24 lg:py-30 mx-auto px-4 sm:px-6 lg:px-8 lg:py-[4rem] lg:mt-[11rem]">
 
         <motion.div>
           <Image
@@ -165,11 +165,11 @@ export default function Home() {
             alt="what do i do?"
             width={600}
             height={400}
-            className="relative object-contain w-full scale-100 sm:scale-110 lg:scale-120 mt-10"
+            className="relative object-contain w-full scale-100 sm:scale-110 lg:scale-120 "
           />
         </motion.div>
         
-        <div className="relative flex flex-col sm:flex-row justify-center w-full max-w-2xl py-12 sm:py-32 lg:py-50 scale-125 sm:scale-150 lg:scale-200 gap-4 sm:gap-0">
+        <div className="relative flex flex-col sm:flex-row justify-center w-full max-w-2xl py-12 sm:py-32 lg:py-50 scale-125 sm:scale-150 lg:scale-200 gap-4 sm:gap-0 lg:mt-[-2rem]">
           <Link href="/illustrations">
           <motion.div 
             className="relative flex px-4 sm:px-6 lg:px-10 justify-center" 
@@ -228,14 +228,14 @@ export default function Home() {
           <motion.div className="relative flex w-full max-w-xs justify-center mt-[2rem] sm:mt-[3rem] lg:mt-[0rem] left-[-10rem] 2xl:left-[-20rem] 2xl:scale-100 2xl:mt-[5rem] scale-80">
             <Image
               src="/contact/phone 1.png"
-              alt="Mahnoor's Portfolio"
+              alt="Phone1"
               width={800}
               height={400}
               className="object-contain w-full z-2 animate-flicker "
             />
             <Image
               src="/contact/phone 2.png"
-              alt="Mahnoor's Portfolio"
+              alt="Phone2"
               width={800}
               height={400}
               className="object-contain w-full z-2 animate-flicker2 absolute"
@@ -243,34 +243,34 @@ export default function Home() {
           </motion.div>
           
           <div className="relative flex flex-col items-center lg:items-start">
-            <motion.div className="flex justify-center lg:justify-right scale-100 sm:scale-100 lg:scale-180 2xl:scale-90 2xl:left[-10rem] lg:mt-[-30rem]">
+            <motion.div className="flex justify-center lg:justify-right scale-100 sm:scale-100 lg:scale-210 2xl:scale-90 2xl:left[-10rem] lg:mt-[5rem] z-[-1]">
               <Image
                 src="/contact/wombat.png"
-                alt="About Image"
+                alt="Wombat"
                 width={500}
                 height={700}
                 className="relative object-contain z-4 right-0 top-0 lg:mt-[-1rem] lg:left-15 2xl:scale-90 2xl:left-[15rem] 2xl:mt-[5rem] z-0 "
               />
             </motion.div>
             <Link href="mailto:mahnoorzahid7287@gmail.com">
-            <motion.div className="flex justify-center lg:justify-right scale-100 sm:scale-125 lg:scale-90 lg:left-[-5rem]">
+            <motion.div className="flex justify-center lg:justify-right scale-100 sm:scale-125 lg:scale-150 lg:left-[-5rem]">
               <Image
                 src="/contact/text 1.png"
-                alt="About Image"
+                alt="contact1"
                 width={500}
                 height={700}
-                className="relative object-contain z-4 right-0 lg:right-[-10rem] top-0 lg:mt-[-1rem] 2xl:scale-70 2xl:mt-[rem] left-[-1rem] hover:scale-[1.1]"
+                className="relative object-contain z-4 right-0 lg:right-[-10rem] top-0 lg:mt-[-1rem] 2xl:mt-[rem] left-[-1rem] hover:scale-[1.1] "
               />
             </motion.div>
             </Link>
             <Link href="https://www.instagram.com/ultraveye" target="_blank" rel="noopener noreferrer">
-            <motion.div className="flex justify-center lg:justify-right scale-100 sm:scale-125 lg:scale-100">
+            <motion.div className="flex justify-center lg:justify-right scale-100 sm:scale-125 ">
               <Image
                 src="/contact/text 2.png"
-                alt="About Image"
+                alt="contact2"
                 width={500}
                 height={700}
-                className="relative object-contain w-full max-w-xs z-4 right-0 lg:right-[-1rem] 2xl:scale-90  2xl:left-[13rem] hover:scale-[1.1]"
+                className="relative object-contain w-full max-w-xs z-4 right-0 lg:right-[-1rem] lg:scale-80  2xl:left-[13rem] hover:scale-[1.1]"
               />
             </motion.div>
             </Link>
