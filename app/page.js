@@ -243,7 +243,7 @@ export default function Home() {
           </motion.div>
           
           <div className="relative flex flex-col items-center lg:items-start">
-            <motion.div className="flex justify-center lg:justify-right scale-100 sm:scale-100 lg:scale-90 2xl:scale-90 2xl:left[-10rem] lg:mt-[5rem] z-[-1]">
+            <motion.div className="flex justify-center lg:justify-right scale-100 sm:scale-100 lg:scale-90 2xl:scale-150 2xl:left[-10rem] lg:mt-[5rem] z-[-1]">
               <Image
                 src="/contact/wombat.png"
                 alt="Wombat"
@@ -253,7 +253,7 @@ export default function Home() {
               />
             </motion.div>
             <Link href="mailto:mahnoorzahid7287@gmail.com">
-            <motion.div className="flex justify-center lg:justify-right scale-100 sm:scale-125 lg:scale-150 lg:left-[-5rem]">
+            <motion.div className="flex justify-center lg:justify-right scale-100 sm:scale-125 lg:scale-100 lg:left-[-5rem]">
               <Image
                 src="/contact/text 1.png"
                 alt="contact1"
@@ -264,7 +264,7 @@ export default function Home() {
             </motion.div>
             </Link>
             <Link href="https://www.instagram.com/ultraveye" target="_blank" rel="noopener noreferrer">
-            <motion.div className="flex justify-center lg:justify-right scale-100 sm:scale-125 ">
+            <motion.div className="flex justify-center lg:justify-right lg:scale-100 sm:scale-125 ">
               <Image
                 src="/contact/text 2.png"
                 alt="contact2"
