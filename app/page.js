@@ -16,11 +16,11 @@ export default function Home() {
     if (section) section.scrollIntoView({ behavior: "smooth" });}
 
   return (
-    <div className="bg-[url('/backgroun.jpg')] bg-cover bg-center bg-repeat overflow-hidden">
+    <div className="bg-[url('/backgroun.jpg')] bg-cover bg-center bg-repeat overflow-x-hidden">
       {/* HOME SECTION */}
 
       
-      <section id="home" className="min-h-screen flex flex-col items-center justify-center relative top-[-4rem] px-4 sm:px-6 lg:px-8 lg:py-8">
+      <section id="home" className="min-h-screen flex flex-col items-center justify-center relative  px-4 sm:px-6 lg:px-8 lg:py-8">
         <motion.div className="relative flex w-full inset-0 max-w-3xl justify-center top-[3rem] sm:top-[4rem] lg:top-[5rem]">
           <Image
             src="/home/portfolio1.png"
@@ -102,9 +102,9 @@ export default function Home() {
       </section>
 
       {/* WHO AM I SECTION */}
-      <section id="about" className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-0 sm:py-10 lg:py-10 flex flex-col lg:flex-row w-full items-start md:top-[10rem] sm:top-[8rem] mt-[20rem]">
+      <section id="about" className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-30 sm:py-10 lg:py-10 flex flex-col lg:flex-row w-full items-start md:top-[10rem] sm:top-[8rem] lg:mt-[10rem] scale-80">
         {/* Left Stack */}
-        <div className="flex-1 flex flex-col gap-4 sm:gap-6 lg:gap-8 z-10 max-w-5xl w-full">
+        <div className="flex-1 flex flex-col gap-4 sm:gap-6 lg:gap-8 z-10 max-w-5xl w-full lg:mt-[10rem]">
           <Image
             src="/about/whoami.png"
             alt="Image 1"
@@ -136,7 +136,7 @@ export default function Home() {
         </div>
 
         {/* Right Side */}
-        <div className="flex-1 flex justify-center items-start max-w-6xl scale-100 sm:scale-125 lg:scale-150 top-0 lg:top-[-10rem] mt-8 lg:top-[10]">
+        <div className="flex-1 flex justify-center items-start max-w-6xl scale-100 sm:scale-125 lg:scale-150 top-0 lg:top-[-10rem] mt-8 lg:top-[10] lg:mt-[10rem]">
           <Image
             src="/about/aboutimage.png"
             alt="About Image"
@@ -147,7 +147,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="flex-row justify-center align-center items-start scale-100 sm:scale-125 lg:scale-40 px-4 sm:px-6 lg:px-8">
+      <div className="flex-row justify-center align-center items-start scale-100 sm:scale-125 lg:scale-60 px-4 sm:px-6 lg:px-8 lg:mt-[-8rem]">
         <Image
           src="/about/abouttext4.png"
           alt="Image 5"
@@ -211,7 +211,7 @@ export default function Home() {
       </section>
 
       {/* LET'S TALK SECTION */}
-      <section id="contact" className="relative flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 lg:scale-90 2xl:top-[15rem] 2xl:scale-75 top-[40rem]">
+      <section id="contact" className="relative flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 lg:scale-90 2xl:top-[15rem] 2xl:scale-75 lg:top-[10rem]">
         <div className="relative flex max-w-2xl w-full justify-center">
           <motion.div>
             <Image
@@ -224,7 +224,7 @@ export default function Home() {
           </motion.div>
         </div>
 
-        <div className="relative flex flex-col lg:flex-row w-full justify-center items-center mx-auto px-4 sm:px-8 lg:px-80 gap-8 lg:gap-0 ">
+        <div className="relative flex flex-col lg:flex-row w-full justify-center items-center mx-auto px-4 sm:px-8 lg:px-80 gap-8 lg:gap-0 lg:scale-120 ">
           <motion.div className="relative flex w-full max-w-xs justify-center top-[2rem] sm:top-[3rem] lg:top-[0rem] left-[-10rem] 2xl:left-[-20rem] 2xl:scale-100 2xl:top-[5rem] scale-80">
             <Image
               src="/contact/phone 1.png"
@@ -243,17 +243,17 @@ export default function Home() {
           </motion.div>
           
           <div className="relative flex flex-col items-center lg:items-start">
-            <motion.div className="flex justify-center lg:justify-right scale-100 sm:scale-100 lg:scale-180 2xl:scale-120 2xl:left[-10rem] lg:top-[-30rem]">
+            <motion.div className="flex justify-center lg:justify-right scale-100 sm:scale-100 lg:scale-180 2xl:scale-90 2xl:left[-10rem] lg:top-[-30rem]">
               <Image
                 src="/contact/wombat.png"
                 alt="About Image"
                 width={500}
                 height={700}
-                className="relative object-contain z-4 right-0 top-0 lg:top-[-1rem] lg:left-15 2xl:scale-120 2xl:left-[15rem] 2xl:top-[5rem] z-0 "
+                className="relative object-contain z-4 right-0 top-0 lg:top-[-1rem] lg:left-15 2xl:scale-90 2xl:left-[15rem] 2xl:top-[5rem] z-0 "
               />
             </motion.div>
             <Link href="mailto:mahnoorzahid7287@gmail.com">
-            <motion.div className="flex justify-center lg:justify-right scale-100 sm:scale-125 lg:scale-150 lg:left-[-5rem]">
+            <motion.div className="flex justify-center lg:justify-right scale-100 sm:scale-125 lg:scale-90 lg:left-[-5rem]">
               <Image
                 src="/contact/text 1.png"
                 alt="About Image"
@@ -270,7 +270,7 @@ export default function Home() {
                 alt="About Image"
                 width={500}
                 height={700}
-                className="relative object-contain w-full max-w-xs z-4 right-0 lg:right-[-1rem] 2xl:scale-100  2xl:top-[rem] 2xl:left-[13rem] lg:top-[rem] hover:scale-[1.1]"
+                className="relative object-contain w-full max-w-xs z-4 right-0 lg:right-[-1rem] 2xl:scale-90  2xl:top-[rem] 2xl:left-[13rem] lg:top-[rem] hover:scale-[1.1]"
               />
             </motion.div>
             </Link>
