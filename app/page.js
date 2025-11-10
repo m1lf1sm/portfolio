@@ -157,7 +157,7 @@ export default function Home() {
         />
       </div>
       {/* MY WORK SECTION */}
-      <section id="work" className="relative flex-column justify-center w-full max-w-2xl py-16 sm:py-24 lg:py-30 mx-auto px-4 sm:px-6 lg:px-8 lg:py-[4rem] lg:mt-[11rem]">
+      <section id="work" className="relative flex-column justify-center w-full max-w-2xl py-16 sm:py-24 lg:py-30 mx-auto px-4 sm:px-6 lg:px-8 lg:py-[4rem] lg:mt-[14rem]">
 
         <motion.div>
           <Image
