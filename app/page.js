@@ -243,7 +243,7 @@ export default function Home() {
           </motion.div>
           
           <div className="relative flex flex-col items-center lg:items-start">
-            <motion.div className="flex justify-center lg:justify-right scale-100 sm:scale-100 lg:scale-90 2xl:scale-150 2xl:left[-10rem] lg:mt-[5rem] z-[-1]">
+            <motion.div className="flex justify-center lg:justify-right scale-100 sm:scale-100 lg:scale-150 2xl:scale-150 2xl:left[-10rem] lg:mt-[5rem] z-[-1]">
               <Image
                 src="/contact/wombat.png"
                 alt="Wombat"
